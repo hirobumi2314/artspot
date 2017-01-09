@@ -1,0 +1,1 @@
+json.array! @artbases, partial: 'artbases/artbasis', as: :artbasis

@@ -1,0 +1,17 @@
+<%= form_for(@artbasis) do |f| %>
+  <% if @artbasis.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@artbasis.errors.count, "error") %> prohibited this artbasis from being saved:</h2>
+
+      <ul>
+      <% @artbasis.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

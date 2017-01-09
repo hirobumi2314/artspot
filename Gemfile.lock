@@ -1,0 +1,195 @@
+GIT
+  remote: git://github.com/activerecord-hackery/ransack.git
+  revision: 1f1ec180ea6e29cfe717fccd45c2e06878d59257
+  specs:
+    ransack (1.8.2)
+      actionpack (>= 3.0)
+      activerecord (>= 3.0)
+      activesupport (>= 3.0)
+      i18n
+      polyamorous (~> 1.3)
+
+GIT
+  remote: git://github.com/jonatack/will_paginate.git
+  revision: 3c861498bdbc643638c1f25bdbe67f93d03be79b
+  specs:
+    will_paginate (3.0.4)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actionmailer (4.1.8)
+      actionpack (= 4.1.8)
+      actionview (= 4.1.8)
+      mail (~> 2.5, >= 2.5.4)
+    actionpack (4.1.8)
+      actionview (= 4.1.8)
+      activesupport (= 4.1.8)
+      rack (~> 1.5.2)
+      rack-test (~> 0.6.2)
+    actionview (4.1.8)
+      activesupport (= 4.1.8)
+      builder (~> 3.1)
+      erubis (~> 2.7.0)
+    activemodel (4.1.8)
+      activesupport (= 4.1.8)
+      builder (~> 3.1)
+    activerecord (4.1.8)
+      activemodel (= 4.1.8)
+      activesupport (= 4.1.8)
+      arel (~> 5.0.0)
+    activesupport (4.1.8)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
+    arel (5.0.1.20140414130214)
+    autoprefixer-rails (6.6.1)
+      execjs
+    bcrypt (3.1.11)
+    bootstrap-navbar (2.3.0)
+      gem_config (~> 0.3)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
+    builder (3.2.2)
+    coffee-rails (4.0.1)
+      coffee-script (>= 2.2.0)
+      railties (>= 4.0.0, < 5.0)
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.12.2)
+    commonjs (0.2.7)
+    devise (4.2.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 5.1)
+      responders
+      warden (~> 1.2.3)
+    devise-bootstrap-views (0.0.10)
+    erubis (2.7.0)
+    execjs (2.7.0)
+    gem_config (0.3.1)
+    hike (1.2.3)
+    i18n (0.7.0)
+    jbuilder (2.6.1)
+      activesupport (>= 3.0.0, < 5.1)
+      multi_json (~> 1.2)
+    jquery-rails (3.1.4)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
+    json (1.8.3)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
+    less-rails (2.8.0)
+      actionpack (>= 4.0)
+      less (~> 2.6.0)
+      sprockets (> 2, < 4)
+      tilt
+    libv8 (3.16.14.17)
+    mail (2.6.4)
+      mime-types (>= 1.16, < 4)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
+    minitest (5.10.1)
+    multi_json (1.12.1)
+    mysql2 (0.3.21)
+    orm_adapter (0.5.0)
+    polyamorous (1.3.1)
+      activerecord (>= 3.0)
+    rack (1.5.5)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rails (4.1.8)
+      actionmailer (= 4.1.8)
+      actionpack (= 4.1.8)
+      actionview (= 4.1.8)
+      activemodel (= 4.1.8)
+      activerecord (= 4.1.8)
+      activesupport (= 4.1.8)
+      bundler (>= 1.3.0, < 2.0)
+      railties (= 4.1.8)
+      sprockets-rails (~> 2.0)
+    railties (4.1.8)
+      actionpack (= 4.1.8)
+      activesupport (= 4.1.8)
+      rake (>= 0.8.7)
+      thor (>= 0.18.1, < 2.0)
+    rake (12.0.0)
+    rdoc (4.3.0)
+    ref (2.0.0)
+    responders (1.1.2)
+      railties (>= 3.2, < 4.2)
+    ruby-ole (1.2.12)
+    sass (3.4.19)
+    sass-rails (4.0.5)
+      railties (>= 4.0.0, < 5.0)
+      sass (~> 3.4.19)
+      sprockets (~> 2.8, < 3.0)
+      sprockets-rails (~> 2.0)
+    sdoc (0.4.2)
+      json (~> 1.7, >= 1.7.7)
+      rdoc (~> 4.0)
+    spreadsheet (1.1.4)
+      ruby-ole (>= 1.0)
+    spring (1.7.2)
+    sprockets (2.12.4)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    sprockets-rails (2.3.3)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      sprockets (>= 2.8, < 4.0)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
+    thor (0.19.4)
+    thread_safe (0.3.5)
+    tilt (1.4.1)
+    turbolinks (5.0.1)
+      turbolinks-source (~> 5)
+    turbolinks-source (5.0.0)
+    twitter-bootstrap-rails (3.2.2)
+      actionpack (>= 3.1)
+      execjs (>= 2.2.2, >= 2.2)
+      less-rails (>= 2.5.0)
+      railties (>= 3.1)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    uglifier (3.0.4)
+      execjs (>= 0.3.0, < 3)
+    warden (1.2.6)
+      rack (>= 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bootstrap-navbar (~> 2.2, >= 2.2.4)
+  bootstrap-sass (~> 3.3.5)
+  coffee-rails (~> 4.0.0)
+  devise
+  devise-bootstrap-views
+  jbuilder (~> 2.0)
+  jquery-rails
+  less-rails
+  mysql2 (~> 0.3.18)
+  rails (= 4.1.8)
+  ransack!
+  sass-rails (>= 3.2)
+  sdoc (~> 0.4.0)
+  spreadsheet
+  spring
+  therubyracer
+  turbolinks
+  twitter-bootstrap-rails
+  uglifier (>= 1.3.0)
+  will_paginate!
+
+BUNDLED WITH
+   1.13.7

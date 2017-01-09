@@ -1,0 +1,68 @@
+<nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsable">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/home" class="navbar-brand">Artspot</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapsable">
+      <ul class="nav navbar-nav foo" id="menu">
+        <p class="navbar-text"></p>
+          <li>
+            <% if current_page?(artbases_path) %>
+              <li class = "active">
+                <%= link_to  "Artbase" ,artbases_path %>
+              </li>
+            <% else%>
+              <li>
+                <%= link_to  "Artbase" ,artbases_path %>
+              </li>
+            <% end%>
+          </li>
+
+          <li>
+            <% if current_page?(collections_path) %>
+              <li class = "active">
+                <%= link_to  "Collections" ,collections_path ,class: "active"%>
+              </li>
+            <% else%>
+              <li>
+                <%= link_to  "Collections" ,collections_path ,class: ""%>
+              </li>
+            <% end%>
+          </li>
+
+          <li>
+            <% if current_page?(collections_path) %>
+              <%= link_to  "Merchandise" ,collections_path ,class: "active"%>
+            <% else%>
+              <%= link_to  "Merchandise" ,collections_path ,class: ""%>
+            <% end%>
+          </li>
+
+          <li>
+            <% if current_page?(collections_path) %>
+              <%= link_to  "Media" ,collections_path ,class: "active"%>
+            <% else%>
+              <%= link_to  "Media" ,collections_path ,class: ""%>
+            <% end%>
+          </li>
+
+          <li>
+            <% if current_page?(collections_path) %>
+              <%= link_to  "Statistics" ,collections_path ,class: "active"%>
+            <% else%>
+              <%= link_to  "Statistics" ,collections_path ,class: ""%>
+            <% end%>
+          </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" align="right">
+        <li><%= link_to "Log Out" , destroy_user_session_path, :method => :delete %></li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,1 @@
+json.partial! "artbases/artbasis", artbasis: @artbasis
