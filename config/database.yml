@@ -48,6 +48,6 @@ test:
 #
 production:
   <<: *default
-  database: spot_production
-  username: spot
-  password: <%= ENV['ARTSPOT_DATABASE_PASSWORD'] %>
+  database: spot
+  username: master
+  password: root
