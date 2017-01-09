@@ -48,7 +48,6 @@ gem "less-rails"
 gem "twitter-bootstrap-rails"
 gem 'bootstrap-navbar', '~> 2.2', '>= 2.2.4'
 gem 'bootstrap-sass', '~> 3.3.5'
-
 gem 'spreadsheet'
 
 #search gem
