@@ -31,8 +31,8 @@
                         <% end%>
                       <div class="panel-body-info">
                           <div id="chartPreferences" class="ct-chart ct-perfect-fourth">
-                              <img src = <%= "/uploads/collection/" + information.collection_id.to_s + "/pic/" + 
-                              information.image.to_s%> >
+                              <img src = <%= Rails.public_path.join("/uploads/collection/" + information.collection_id.to_s + "/pic/" +
+                              information.image.to_s)%> >
 
                               <em><%=information.subtitle%></em>
                               <em><%= information.year%></em>
