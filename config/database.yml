@@ -49,5 +49,5 @@ test:
 production:
   <<: *default
   database: spot_production
-  username: spot
-  password: <%= ENV['ARTSPOT_DATABASE_PASSWORD'] %>
+  username: master
+  password: root

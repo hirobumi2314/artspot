@@ -60,3 +60,12 @@
     text-align: center;
 }
 
+@media screen and (min-width: 1280px){
+    .panel-body-info{
+     
+    }
+}
+
+img{
+    max-height: calc(((100vw - 176px) / 5));
+}

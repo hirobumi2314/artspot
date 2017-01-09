@@ -1,5 +1,4 @@
-<%= link_to 'Edit', edit_information_path(@information), class: "btn btn-success" %> 
-<%= link_to 'Back', information_index_path, class: "btn btn-success" %>
+
   <div class="content">
       <div class="container-fluid">
         <div class="row">
@@ -90,6 +89,8 @@
 	                <tr><th scope="row">17</th><td>Image:</td><td><%= @information.image%></td></tr>
 				  </tbody>
 				</table>
+				<%= link_to 'Edit', edit_information_path(@information), class: "btn btn-success" %> 
+				<%= link_to 'Back', information_index_path, class: "btn btn-success" %>
 		     </div>            
         </div>
       </div>

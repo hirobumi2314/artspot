@@ -21,45 +21,33 @@
                 <%- j = -1
                 @filtered_informations.each do |information| 
                   j = j + 1%>
-                <div class="col-lg-2 col-sm-4 col-md-3">
-                <% if j % 2 == 0%>
-                  <div class="panel panel-primary">
-                  <%end%>
-                <% if j % 2 == 1%>
-                  <div class="panel panel-danger">
-                  <%end%>
-                    <div class="panel-heading">
+                  <%= link_to information do %>
+                    <div class="col-lg-2 col-sm-4 col-md-3">                    
+                      <div class = "row">
                         <% if information.maintitle == nil %>
                         <h4 class="title">&nbsp;</h4>
                         <% else%>
                         <h4 class="title"> <%= information.maintitle%> </h4>
                         <% end%>
-                    </div>
-                    <div class="panel-body">
-                        <div id="chartPreferences" class="ct-chart ct-perfect-fourth">
+                      <div class="panel-body-info">
+                          <div id="chartPreferences" class="ct-chart ct-perfect-fourth">
+                              <img src = <%= "/uploads/collection/" + information.collection_id.to_s + "/pic/" + 
+                              information.image.to_s%> >
 
-                            <img src = <%= "/uploads/collection/" + information.collection_id.to_s + "/pic/" + 
-                            information.image.to_s%> >
-
-                            <em><%=information.subtitle%></em>
-                            <em><%= information.year%></em>
-                            <em><%= information.medium%></em>
-                            <em><%= information.dimentions%></em>
-                            <em><%= information.edition%></em>
-                        </div>
-                        <div class="footer">
-                            <div class="legend">
-                                <i class="fa fa-circle text-info"></i> 
-                                <%= link_to 'Show', information , class: " " %>
-                                <i class="fa fa-circle text-danger"></i> 
-                                <%= link_to 'Edit', edit_information_path(information), class: "" %>
-                                <i class="fa fa-circle text-warning"></i>
-                                <%= link_to 'Destroy', information, method: :delete, data: { confirm: 'Are you sure?' } , class: ""%>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                              <em><%=information.subtitle%></em>
+                              <em><%= information.year%></em>
+                              <em><%= information.medium%></em>
+                              <em><%= information.dimentions%></em>
+                              <em><%= information.edition%></em>
+                          </div>
+                          <div class="footer">
+                              <div class="legend">
+                              </div>
+                          </div>
+                  </div>
+                  </div>
               </div>
+              <%end%>
           <%- end %>
 
           </div>
