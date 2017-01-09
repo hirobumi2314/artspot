@@ -48,6 +48,6 @@ test:
 #
 production:
   <<: *default
-  database: spot_production
+  database: spot
   username: master
   password: root

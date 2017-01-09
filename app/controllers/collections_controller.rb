@@ -95,7 +95,7 @@ class CollectionsController < ApplicationController
 
     uploaded_pics.each do |pic|
       if !Dir.exists?(upload_path)
-        Dir.mkdir(upload_path)
+        FileUtils.mkdir_p(upload_path)
       end
 
       File.open(Rails.root.join('public', 'uploads' ,pic[1].original_filename), 'wb') do |file|
@@ -112,7 +112,7 @@ class CollectionsController < ApplicationController
 
     uploaded_pics.each do |pic|
       if !Dir.exists?(upload_path)
-        Dir.mkdir(upload_path)
+        FileUtils.mkdir_p(upload_path)
       end
 
       File.open(Rails.root.join('public', 'uploads', pic[1].original_filename), 'wb') do |file|
